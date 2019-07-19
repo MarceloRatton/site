@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Topbar from './components/Topbar'
-import Title from './components/Title'
+import Routes from './routes'
 
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,8 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
-      <Title />
-      <Topbar />
+      <Routes />
     </div>
   )
 } 
