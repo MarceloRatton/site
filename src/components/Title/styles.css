@@ -1,0 +1,15 @@
+.site-heading {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    line-height: 1.5;
+    font-family: 'Raleway';
+  }
+
+.site-heading .header-title {
+    text-transform: uppercase;
+}  
+
+.site-heading .header-subtitle {
+    font-size: 0.7em;
+}
+  

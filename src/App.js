@@ -1,23 +1,18 @@
 import React from 'react'
 
-import Navbar from './components/Navbar'
+import Topbar from './components/Topbar'
+import Title from './components/Title'
 
 import './App.css'
-import './assets/css/animate.css'
-import './assets/css/bootstrap.min.css'
-import './assets/css/font-awesome.min.css'
-import './assets/css/overwrite.css'
-import './assets/css/simpletextrotator.css'
-import './assets/css/style.css'
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
-      <h2>MarceloRatton.com</h2>
-      <Navbar />
+      <Title />
+      <Topbar />
     </div>
   )
-}
+} 
 
 export default App
