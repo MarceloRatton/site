@@ -7,14 +7,14 @@ import logo from './logo.png'
 export default class Topbar extends Component {
   render() {
     return (
-      <Navbar className="dark" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" className="dark" bg="dark" variant="dark">
         <Navbar.Brand>
           <Nav>
             <Nav.Link href="/"><img src={logo} alt="MarceloRatton.com" title="MarceloRatton.com" /></Nav.Link>
           </Nav>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
             <Nav.Link href="/sobre">Sobre</Nav.Link>
             <Nav.Link href="/contato">Contato</Nav.Link>
