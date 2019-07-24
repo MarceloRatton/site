@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 
 import './styles.css'
-import logo from './logo@2.png'
+import logo from './logo.png'
 
 export default class Topbar extends Component {
   render() {
@@ -16,7 +16,6 @@ export default class Topbar extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="/teste">Teste</Nav.Link>
             <Nav.Link href="/sobre">Sobre</Nav.Link>
             <Nav.Link href="/contato">Contato</Nav.Link>
             <Nav.Link href="/projetos">Projetos</Nav.Link>
