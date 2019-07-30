@@ -1,3 +1,4 @@
 .menu-bar {
-    background-color: #246;
+    background-image: linear-gradient(to right,#246 20%,#468 80%);
+    background-blend-mode: color-burn; 
 }

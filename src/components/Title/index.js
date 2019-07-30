@@ -5,10 +5,14 @@ import './styles.css'
 export default class Title extends Component {
   render() {
     return (
-        <h1 className="site-heading">
-            <span className="header-title">Desenvolvimento de soluções Web</span><br />
-            <span className="header-subtitle">MarceloRatton.com</span>
+      <div className="site-heading">
+        <h1>
+            <span className="header-title">Desenvolvimento de soluções Web</span>
         </h1>
+        <h3>
+          <span className="header-subtitle">MarceloRatton.com</span>
+        </h3>
+      </div>
     )
   }
 }

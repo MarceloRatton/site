@@ -5,7 +5,8 @@ import Home from '../pages/Home'
 import Sobre from '../pages/Sobre'
 import Contato from '../pages/Contato'
 import Projetos from '../pages/Projetos'
-// import Teste from '../pages/Teste'
+
+import Topbar from '../components/Topbar'
 
 
 // import { Container } from './styles';
@@ -17,10 +18,27 @@ const Routes = () => {
                 <Route exact path="/" component={Home} />        
                 <Route path="/sobre" component={Sobre} />        
                 <Route path="/contato" component={Contato} />        
-                <Route exact path="/projetos" component={Projetos} />        
+                <Route exact path="/projetos" component={Projetos} />   
+                <Route component={NoMatch} />     
             </Switch>
         </BrowserRouter>
     )
+}
+
+function NoMatch({ location }) {
+    return (
+        <div className="pag-404">
+            <Topbar />
+            <div className="error">
+                <h3>
+                    Não encontramos: <code>{location.pathname}</code>
+                </h3>
+                <div className="error-message">
+                    Desculpe o link que você procura não está disponível no momento 
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default Routes
