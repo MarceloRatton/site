@@ -1,8 +1,44 @@
 .footer {
-    background-image: linear-gradient(to right,#468 20%,#246 80%);
-    color: rgba(red, green, blue, 0.75);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin: 0;
+    background-image: linear-gradient(to right,#246 20%,#468 80%);
+    background-blend-mode: color-burn; 
+    color: #ddd;
+    margin-top: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-items {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.footer img {
+    margin: 15px;
+}
+
+.footer .base-line {
+    border-right: 1px solid #ddd;
+}
+
+.footer span {
+    color: #ddd;
+    font-family: 'Fira Code Retina';
+}
+
+.footer h4 {
+    color: #acc;
+    font-weight: bold;
 }

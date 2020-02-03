@@ -7,6 +7,7 @@ import Contato from '../pages/Contato'
 import Projetos from '../pages/Projetos'
 
 import Topbar from '../components/Topbar'
+import Footbar from '../components/Footbar'
 
 
 // import { Container } from './styles';
@@ -37,6 +38,7 @@ function NoMatch({ location }) {
                     Desculpe o link que você procura não está disponível no momento 
                 </div>
             </div>
+            <Footbar />
         </div>
     );
 }
