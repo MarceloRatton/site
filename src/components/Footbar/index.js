@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Container, Row, Col, Figure, Image } from 'react-bootstrap'
+import React from 'react'
+import { Container, Row, Col, Figure, Image, Nav } from 'react-bootstrap'
 
 import './styles.css'
 
@@ -9,10 +9,9 @@ import LinkedIn from '../../assets/img/icons/linkedin.svg'
 import Github from '../../assets/img/icons/github.svg'
 import Instagram from '../../assets/img/icons/instagram.svg'
 
-export default class Footbar extends Component {
-  render() {
+export default function Footbar() {
     return (
-        <Container className="footer">
+        <Container fluid className="footer">
             <Col className="base-line" xs={4}>
                 <Row>
                     <Figure>
@@ -26,13 +25,16 @@ export default class Footbar extends Component {
                         <h4>Menu</h4>
                     </Row>
                     <Row>
-                        Sobre
+                        <Nav.Link href="/">Home</Nav.Link>
                     </Row>
                     <Row>
-                        Contato
+                        <Nav.Link href="/sobre">Sobre</Nav.Link>
                     </Row>
                     <Row>
-                        Projetos
+                        <Nav.Link href="/contato">Contato</Nav.Link>
+                    </Row>
+                    <Row>
+                        <Nav.Link href="/projetos">Projetos</Nav.Link>
                     </Row>
                 </Col>
                 <Col>
@@ -45,12 +47,12 @@ export default class Footbar extends Component {
                         </a> 
                     </Row>
                     <Row>
-                    <a href="https://github.com/rattones" target="_blank">
+                        <a href="https://github.com/rattones" target="_blank">
                             <Image src={Github} thumbnail={true} width={30}/>/Rattones
                         </a> 
                     </Row>
                     <Row>
-                    <a href="https://instagram.com/marcelorattoncom" target="_blank">
+                        <a href="https://instagram.com/marcelorattoncom" target="_blank">
                             <Image src={Instagram} thumbnail={true} width={30}/>/MarceloRatton.com
                         </a> 
                     </Row>
@@ -58,5 +60,4 @@ export default class Footbar extends Component {
             </Col>
         </Container>
     )
-  }
 }

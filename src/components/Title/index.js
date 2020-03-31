@@ -1,18 +1,12 @@
-import React, { Component } from 'react';
-
+import React from 'react';
+import { Container } from 'react-bootstrap';
 import './styles.css'
 
-export default class Title extends Component {
-  render() {
+export default function Title({ title }) {
     return (
-      <div className="site-heading">
-        <h1>
-            <span className="header-title">Desenvolvimento de soluções Web</span>
-        </h1>
-        <h3>
-          <span className="header-subtitle">MarceloRatton.com</span>
-        </h3>
-      </div>
-    )
-  }
+      <Container fluid className="header">
+        <div className="header-title">{title}</div>
+        <div className="header-subtitle">MarceloRatton.com</div>
+      </Container>
+    );
 }
