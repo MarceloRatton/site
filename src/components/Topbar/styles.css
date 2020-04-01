@@ -1,4 +1,5 @@
 .menu-bar {
-    background-image: linear-gradient(to right,#246 20%,#468 80%);
+    background-image: linear-gradient(to right,#235 20%,#455 80%);
     background-blend-mode: color-burn; 
+    border-top: 1px solid #ddd;
 }

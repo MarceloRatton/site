@@ -1,8 +1,7 @@
 .footer {
-    background-image: linear-gradient(to right,#246 20%,#468 80%);
+    background-image: linear-gradient(to right,#235 20%,#455 80%);
     background-blend-mode: color-burn; 
     color: #ddd;
-    margin-top: 30px;
     border-bottom-left-radius: 75px;
     border-bottom-right-radius: 75px;
     display: flex;

@@ -9,3 +9,6 @@
 .pag-404 .error .error-message {
   color: rgba(red, green, blue, 0.85);
 }
+body {
+  padding: 50px;
+}

@@ -1,0 +1,6 @@
+.contend {
+    background-image: linear-gradient(to right,#eef 20%,#ffe 80%);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    box-shadow: 0 0 50px #ddd;
+}
